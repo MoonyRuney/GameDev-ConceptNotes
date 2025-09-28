@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Home",
+    "description": "Welcome page with site overview",
+    "url": "index.html"
+  },
+  {
+    "title": "Link Dump",
+    "description": "Sitemap containing all webpages",
+    "url": "sitemap.html"
+  }
+]
