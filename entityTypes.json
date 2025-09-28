@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Skeleton",
+    "image": "images/entities/skeleton.jpg",
+    "type": "Umbra",
+    "attributes": ["Undead", "Humanoid"]
+  },
+  {
+    "name": "Skeleton Archer",
+    "image": "images/entities/skeleton-archer.jpg",
+    "type": "Umbra",
+    "attributes": ["Undead", "Humanoid"]
+  }
+]
