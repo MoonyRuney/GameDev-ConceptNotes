@@ -9,7 +9,9 @@
     "description": "Sitemap containing all webpages",
     "url": "sitemap.html"
   },
-  "title": "template-page",
-  "description": "template",
-  "url": "template-page.html"
+  {
+    "title": "template-page",
+    "description": "template",
+    "url": "template-page.html"
+  }
 ]
