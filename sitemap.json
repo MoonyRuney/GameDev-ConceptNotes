@@ -13,5 +13,10 @@
     "title": "template-page",
     "description": "template",
     "url": "template-page.html"
+  }, 
+  {
+    "title": "Entities",
+    "description": "A brief overview of what Entities are, their classifications, and what makes up an Entity",
+    "url": "entitites.html"
   }
 ]
