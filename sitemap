@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Map</title>
+  <link rel="stylesheet" href="sitemap-style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Site Map</h1>
+    <input type="text" id="searchBar" placeholder="Search pages..." onkeyup="filterPages()" />
+  </header>
+
+  <ul id="pageList"></ul>
+
+  <script>
+    let pagesData = [];
+
+    async function loadPages() {
+      const response = await fetch('pages.json');
+      pagesData = await response.json();
+      displayPages(pagesData);
+    }
+
+    function displayPages(pages) {
+      const list = document.getElementById('pageList');
+      list.innerHTML = '';
+      pages.forEach(page => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${page.url}">${page.title}</a><span class="page-title">${page.description}</span>`;
+        list.appendChild(li);
+      });
+    }
+
+    function filterPages() {
+      const query = document.getElementById('searchBar').value.toLowerCase();
+      const filtered = pagesData.filter(page =>
+        page.title.toLowerCase().includes(query) ||
+        page.description.toLowerCase().includes(query)
+      );
+      displayPages(filtered);
+    }
+
+    loadPages();
+  </script>
+</body>
+</html>
