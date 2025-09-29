@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Aqua",
+        "advantage": "Ignis",
+        "disadvantage": "Aero"
+    },
+    {
+        "name": "Ignis",
+        "advantage": "Terra",
+        "disadvantage": "Aqua"
+    },
+    {
+        "name": "Terra",
+        "advantage": "Aero",
+        "disadvantage": "Ignis"
+    },
+    {
+        "name": "Aero",
+        "advantage": "Aqua",
+        "disadvantage": "Terra"
+    },
+    {
+        "name": "Vis",
+        "advantage": "none",
+        "disadvantage": "none"
+    },
+    {
+        "name": "Lumen",
+        "advantage": "Umbra",
+        "disadvantage": "Umbra"
+    },
+    {
+        "name": "Umbra",
+        "advantage": "Lumen",
+        "disadvantage": "Lumen"
+    }
+]
