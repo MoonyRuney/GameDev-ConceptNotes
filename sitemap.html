@@ -27,7 +27,7 @@
     let pagesData = [];
 
     async function loadPages() {
-      const response = await fetch('sitemap.json');
+  const response = await fetch('./sitemap.json');
       pagesData = await response.json();
       displayPages(pagesData);
     }
