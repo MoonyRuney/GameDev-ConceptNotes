@@ -21,9 +21,8 @@ async function loadEntity() {
       <img src="${entity.image}" alt="${entity.name}" />
       <div class="info-text">
         <h3>${entity.name}</h3>
-        <p>Type: ${entity.type}</p>
-        <p>Attributes: ${creature.attributes.join(', ')}</p>
-        
+  <p>Type: ${entity.type}</p>
+  <p>Attributes: ${entity.attributes.join(', ')}</p>
       </div>
     `;
   } catch (error) {
