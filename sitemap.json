@@ -28,5 +28,45 @@
     "title": "Entities",
     "description": "A brief overview of what Entities are, their classifications, and what makes up an Entity",
     "url": "entities.html"
+  }, 
+  {
+    "title": "Element Types",
+    "description": "A brief overview of the different Element Types in the game.",
+    "url": "systems/element-type.html"
+  }, 
+  {
+    "title": "Ignis",
+    "description": "The element of fire, passion and destuction.",
+    "url": "systems/ignis.html"
+  }, 
+  {
+    "title": "Aqua",
+    "description": "The element of water, motion and wisdom.",
+    "url": "systems/aqua.html"
+  }, 
+  {
+    "title": "Aero",
+    "description": "The element of air, freedom and independence.",
+    "url": "systems/aero.html"
+  }, 
+  {
+    "title": "Terra",
+    "description": "The element of earth, fortification and stability.",
+    "url": "systems/terra.html"
+  }, 
+  {
+    "title": "Lumen",
+    "description": "The element of light, divinity and life.",
+    "url": "systems/lumen.html"
+  }, 
+  {
+    "title": "Umbra",
+    "description": "The element of darkness, decay and death.",
+    "url": "systems/umbra.html"
+  }, 
+  {
+    "title": "Vis",
+    "description": "The Neutral/Normal Element.",
+    "url": "systems/vis.html"
   }
 ]
