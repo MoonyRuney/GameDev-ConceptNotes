@@ -1,13 +1,13 @@
 [
   {
     "name": "Skeleton",
-    "image": "images/entities/skeleton.jpg",
+    "image": "images/entities/skeleton.png",
     "type": "Umbra",
     "attributes": ["Undead", "Humanoid"]
   },
   {
     "name": "Skeleton Archer",
-    "image": "images/entities/skeleton-archer.jpg",
+    "image": "images/entities/skeleton-archer.png",
     "type": "Umbra",
     "attributes": ["Undead", "Humanoid"]
   }
