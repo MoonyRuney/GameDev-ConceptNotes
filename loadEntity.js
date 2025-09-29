@@ -8,7 +8,7 @@ async function loadEntity() {
   }
 
   try {
-    const res = await fetch('entityTypes.json');
+  const res = await fetch('./entityTypes.json');
     const data = await res.json();
     const entity = data.find(c => c.name.toLowerCase() === entityName);
 
