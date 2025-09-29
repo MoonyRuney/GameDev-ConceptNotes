@@ -22,14 +22,24 @@
   </header>
 
   <ul id="pageList"></ul>
+  <noscript><p style="color:red">JavaScript is disabled or not working.</p></noscript>
 
   <script>
+    console.log('Sitemap script loaded');
     let pagesData = [];
 
     async function loadPages() {
-  const response = await fetch('./sitemap.json');
-      pagesData = await response.json();
-      displayPages(pagesData);
+      try {
+        const response = await fetch('./sitemap.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok: ' + response.status);
+        }
+        pagesData = await response.json();
+        displayPages(pagesData);
+      } catch (err) {
+        document.getElementById('pageList').innerHTML = `<li style="color:red">Error loading sitemap: ${err.message}</li>`;
+        console.error('Error loading sitemap:', err);
+      }
     }
 
     function displayPages(pages) {
