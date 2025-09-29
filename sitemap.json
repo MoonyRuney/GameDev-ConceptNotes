@@ -13,10 +13,20 @@
     "title": "template-page",
     "description": "template",
     "url": "template-page.html"
+  },
+  {
+    "title": "Systems",
+    "description": "A brief overview of the game systems planned.",
+    "url": "systems.html"
+  }, 
+  {
+    "title": "world-building",
+    "description": "A brief overview of world-building.",
+    "url": "world-building.html"
   }, 
   {
     "title": "Entities",
     "description": "A brief overview of what Entities are, their classifications, and what makes up an Entity",
-    "url": "entitites.html"
+    "url": "entities.html"
   }
 ]
