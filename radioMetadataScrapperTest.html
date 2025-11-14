@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Metadata Fetcher</title>
+</head>
+<body>
+  <div id="output">Waiting for data...</div>
+
+  <script>
+    async function fetchMetadata() {
+      try {
+        // Replace with the URL of the site you want to fetch
+        const response = await fetch("https://r-a-d.io");
+        const html = await response.text();
+
+        // Parse the HTML
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        // Grab the div with id="metadata"
+        const metadataDiv = doc.getElementById("metadata");
+
+        // Update the output div with the text content
+        document.getElementById("output").textContent =
+          metadataDiv ? metadataDiv.textContent.trim() : "No metadata found.";
+      } catch (error) {
+        document.getElementById("output").textContent =
+          "Error fetching metadata: " + error;
+      }
+    }
+
+    // Run immediately
+    fetchMetadata();
+
+    // Update once a minute (60,000 ms)
+    setInterval(fetchMetadata, 60000);
+  </script>
+</body>
+</html>
