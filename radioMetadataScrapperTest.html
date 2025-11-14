@@ -11,7 +11,8 @@
     async function fetchMetadata() {
       try {
         // Replace with the URL of the site you want to fetch
-        const response = await fetch("https://r-a-d.io");
+        const corsProxy = "https://cors-anywhere.herokuapp.com/";
+        const response = await fetch(corsProxy + "https://r-a-d.io");
         const html = await response.text();
 
         // Parse the HTML
